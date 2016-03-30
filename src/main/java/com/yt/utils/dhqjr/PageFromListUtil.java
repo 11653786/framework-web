@@ -1,7 +1,8 @@
 package com.yt.utils.dhqjr;
 
 
-import com.yt.util.dhqjr.page.utils.PageSearch;
+
+import com.yt.utils.dhqjr.page.utils.PageSearch;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package com.yt.service.system.impl;
 
+import com.yt.dao.impl.BaseDaoImpl;
+import com.yt.entity.mybatis.Employee;
 import com.yt.service.system.EmployeeService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

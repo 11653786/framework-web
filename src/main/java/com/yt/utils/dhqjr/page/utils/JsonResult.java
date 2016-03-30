@@ -1,7 +1,7 @@
 package com.yt.utils.dhqjr.page.utils;
 
 
-import com.yt.util.yt.annotation.RestAttribute;
+import com.yt.utils.annotation.RestAttribute;
 
 /**
  * 
