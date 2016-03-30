@@ -2,7 +2,11 @@ package com.yt.mongodao.impl;
 
 import com.google.gson.reflect.TypeToken;
 import com.mongodb.*;
+import com.yt.entity.mongo.Student;
 import com.yt.mongodao.MongoBaseDaoBasic;
+import com.yt.utils.JsonUtil;
+import com.yt.utils.ListUtil;
+import com.yt.utils.MongoUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
@@ -108,7 +112,7 @@ public class MongoDaoBasicImpl<T> implements MongoBaseDaoBasic<T> {
             BasicDBObject where = new BasicDBObject(new BasicDBObject("_id", id));
             DBObject db= getDbCollection().findOne(where);
             String jsonStr=JsonUtil.toJson(db);
-            T t=JsonUtil.fromJson(jsonStr,getEntityClass());
+            T t= JsonUtil.fromJson(jsonStr, getEntityClass());
         return t;
     }
 
