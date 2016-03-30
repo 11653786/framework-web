@@ -1,4 +1,4 @@
-package com.yt.shiro.shiro;
+package com.yt.shiro;
 
 import org.apache.shiro.authc.UsernamePasswordToken;
 

@@ -1,4 +1,4 @@
-package com.yt.shiro.shiro;
+package com.yt.shiro;
 
 import com.yt.entity.mybatis.Employee;
 import com.yt.entity.mybatis.EmployeeExample;

@@ -5,8 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-
-
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close"
           p:driverClassName="${jdbc.driver}"
@@ -22,7 +20,7 @@
         <property name="mapperLocations">
             <list>
                 <!-- 表示在com.rbao.resultmap包或以下所有目录中，以-resultmap.xml结尾所有文件 -->
-                <value>classpath:com/yt/entity/*Mapper.xml</value>
+                <value>classpath:*Mapper.xml</value>
             </list>
         </property>
     </bean>
