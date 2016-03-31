@@ -17,7 +17,7 @@
     <mvc:annotation-driven/>
 
     <!--欢迎首页-->
-    <mvc:view-controller path="/" view-name="redirect:/index.do"/>
+    <mvc:view-controller path="/" view-name="index"/>
 
 
     <mvc:annotation-driven>
@@ -51,6 +51,6 @@
 
 
     <!--mvc闈欐�佽祫婧愭嫤鎴�-->
-    <mvc:resources location="/static" mapping="/"/>
+    <mvc:resources location="/static" mapping="/staitc"/>
 
 </beans>
